@@ -1,0 +1,30 @@
+
+<ngx-one-column-layout>
+  <nb-menu [items]="menu"></nb-menu>
+  <router-outlet>
+    <div class="row">
+
+      <div class="col">
+        <h2>OwlDateTime</h2>
+        <a href="https://danielykpan.github.io/date-time-picker/">Docs</a>
+        <input nbInput
+        placeholder="اختر تاريخ"
+        fullWidth
+        format="yyyy/MM/dd HH:mm:ss"
+        [owlDateTimeTrigger]="dt2"
+        [owlDateTime]="dt2">
+        <owl-date-time [pickerType]="'calendar'" #dt2></owl-date-time>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <b>Uncomment providers line in <code>src/app/app.module.ts</code> to enable Hijri in OwlDateTime</b>
+        <p>
+          The issue in this calendar that it is not showing correct numbers, but once you select a day it will get the correct Hijri value.
+        </p>
+        <p>It also supports momment js but didn't work</p>
+        <p>Give it a try, you may find the solution.</p>
+      </div>
+    </div>
+  </router-outlet>
+</ngx-one-column-layout>
