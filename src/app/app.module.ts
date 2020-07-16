@@ -22,7 +22,10 @@ import {
   NbWindowModule,
 } from '@nebular/theme';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
-// import { Calendar2Component } from './modules/calendar2/calendar2.component';
+import SA from '@angular/common/locales/ar-SA';
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(SA, 'ar-SA');
 
 @NgModule({
   declarations: [AppComponent],
@@ -47,7 +50,7 @@ import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
   ],
   bootstrap: [AppComponent],
   providers: [
-    // { provide: LOCALE_ID, useValue: 'ar-SA' },  // Uncomment this line to enable Hijri in OwlDateTime
+    { provide: LOCALE_ID, useValue: 'ar-SA' },  // Uncomment this line to enable Hijri in OwlDateTime
   ],
 })
 export class AppModule {
