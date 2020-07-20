@@ -28,9 +28,6 @@ export class CalendarComponent implements OnInit {
 
   ngOnInit(): void {
     this.hijri = toHijri(2020, 7, 20);
-    console.log('Hijri: ' + JSON.stringify(this.hijri));
-
     this.gregorian = toGregorian(1441, 11, 29);
-    console.log('Gregorian: ' + JSON.stringify(this.gregorian));
   }
 }
