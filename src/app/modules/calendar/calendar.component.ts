@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'ngx-calendar',
   templateUrl: './calendar.component.html',
-  styleUrls: ['./calendar.component.scss']
+  styleUrls: ['./calendar.component.scss'],
 })
 export class CalendarComponent implements OnInit {
   public selectedMoment: Date;
@@ -12,21 +12,18 @@ export class CalendarComponent implements OnInit {
     {
       title: 'NbDatepicker',
       link: '/calendar1',
-      icon: 'home'
+      icon: 'home',
     },
     {
       title: 'OwlDateTime',
       link: '/calendar2',
-      icon: 'home'
-    }
+      icon: 'home',
+    },
   ];
 
-  constructor() {
-
-  }
+  constructor() {}
 
   ngOnInit(): void {
     this.selectedMoment = new Date();
   }
-
 }
