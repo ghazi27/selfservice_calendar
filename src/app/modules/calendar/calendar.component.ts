@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calendar.component.scss']
 })
 export class CalendarComponent implements OnInit {
+  public selectedMoment: Date;
 
   menu = [
     {
@@ -25,6 +26,7 @@ export class CalendarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.selectedMoment = new Date();
   }
 
 }

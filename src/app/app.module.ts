@@ -24,6 +24,7 @@ import {
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import SA from '@angular/common/locales/ar-SA';
 import { registerLocaleData } from '@angular/common';
+import { NbDateFnsDateModule } from "@nebular/date-fns";
 
 registerLocaleData(SA, 'ar-SA');
 
@@ -43,6 +44,7 @@ registerLocaleData(SA, 'ar-SA');
     NbChatModule.forRoot({
       messageGoogleMapKey: 'AIzaSyA_wNuCzia92MAmdLRzmqitRGvCF7wCZPY',
     }),
+    NbDateFnsDateModule.forRoot({ format: "yyyy/MM/dd HH:mm:ss" }),
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
     OwlDateTimeModule,

@@ -11,6 +11,8 @@ import { ThemeModule } from '../../@theme/theme.module';
 import { CalendarComponent } from './calendar.component';
 import { CalendarRoutingModule } from './calendar-routing.module';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
+import { NbDateFnsDateModule } from "@nebular/date-fns";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [CalendarComponent],
@@ -21,7 +23,8 @@ import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
     ThemeModule,
     NbInputModule,
     NbDatepickerModule,
-
+    NbDateFnsDateModule,
+    FormsModule,
   ],
   exports: [CalendarComponent],
   providers: [
