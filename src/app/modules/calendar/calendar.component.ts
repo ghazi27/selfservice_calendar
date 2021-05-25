@@ -22,6 +22,11 @@ export class CalendarComponent implements OnInit {
       link: '/calendar2',
       icon: 'home',
     },
+    {
+      title: 'ngbDatepicker',
+      link: '/calendar3',
+      icon: 'home',
+    },
   ];
 
   constructor() {}

@@ -1,0 +1,34 @@
+<ngx-one-column-layout>
+  <nb-menu [items]="menu"></nb-menu>
+  <router-outlet>
+    <div class="row">
+
+      <div class="col">
+        <h2>ngbDatepicker</h2>
+        <a href="https://ng-bootstrap.github.io/#/components/datepicker/calendars">Docs</a>
+        <hr />
+
+        <form class="form-inline">
+          <div class="form-group">
+            <div class="input-group">
+              <input class="form-control" placeholder="yyyy-mm-dd" (click)="d.toggle()" class="rtl" name="dp" [(ngModel)]="model"
+                ngbDatepicker #d="ngbDatepicker">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <hr />
+
+        <button class="btn btn-sm btn-outline-primary mr-2" (click)="selectToday();">Select Today</button>
+
+        <hr />
+
+        <pre>Model: {{ model | json }}</pre>
+      </div>
+    </div>
+
+  </router-outlet>
+</ngx-one-column-layout>

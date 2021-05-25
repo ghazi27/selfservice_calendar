@@ -24,6 +24,7 @@ import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import SA from '@angular/common/locales/ar-SA';
 import { registerLocaleData } from '@angular/common';
 import { NbDateFnsDateModule } from '@nebular/date-fns';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 registerLocaleData(SA, 'ar-SA');
 
@@ -48,6 +49,7 @@ registerLocaleData(SA, 'ar-SA');
     ThemeModule.forRoot(),
     OwlDateTimeModule,
     OwlNativeDateTimeModule,
+    NgbModule,
   ],
   bootstrap: [AppComponent],
   providers: [

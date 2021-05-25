@@ -12,6 +12,11 @@ export const routes: Routes = [
     loadChildren: () => import('./modules/calendar2/calendar2.module')
       .then(m => m.Calendar2Module),
   },
+  {
+    path: 'calendar3',
+    loadChildren: () => import('./modules/calendar3/calendar3.module')
+      .then(m => m.Calendar3Module),
+  },
   { path: '', redirectTo: 'calendar1', pathMatch: 'full' },
   { path: '**', redirectTo: 'pages' },
 ];
